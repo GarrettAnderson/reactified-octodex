@@ -9,4 +9,178 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  font: 16px helvetica, arial, freesans, clean, sans-serif;
 }
+
+header {
+  background-color: #f0f0f0;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.logoImg {
+  width: 12em;
+  padding-left: 2em;
+}
+
+.navBar {
+  height: 100%;
+}
+
+.navBarList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* list-style: none; */
+}
+
+.navBar li {
+  padding-right: 1rem;
+}
+
+.navBarList li:last-child {
+  padding-right: 2em;
+}
+
+.navBar li > a {
+  text-decoration: none;
+  font-size: 13px !important;
+  font-weight: bold;
+  color: #000;
+}
+
+.navBar li > a:hover {
+  color: #4183c4;
+}
+
+/* Main Section - octocat figure grid */
+
+/* the figure width */
+figure {
+  width: 22rem;
+  border: 3px solid #cacaca;
+}
+
+figure img {
+  border: none;
+  width: 22rem;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #cacaca;
+}
+
+figcaption p:first-child {
+  color: #cacaca;
+  font-weight: bold;
+}
+
+figcaption p:nth-child(2) {
+  /* display: none; */
+}
+
+figcaption p:nth-child(2) a {
+  color: #000;
+  text-decoration: none;
+}
+
+.octocatContentList {
+  /* list-style: none; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0px;
+  align-items: center;
+}
+
+.octocatContent img {
+  width: 100%;
+}
+
+/* removed declaration bc class not necessary on the image .octocatMainImg {
+} */
+
+.octocatContent .creditIcon {
+  width: 1.25em;
+  position: relative;
+  top: 5px;
+  border-radius: 5px;
+}
+
+/* MOBILE MEDIA QUERY */
+
+/* @media screen and (max-width: 600px) {
+  :root {
+    font: 16px / 1 sans-serif;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100%;
+    font: 16px helvetica, arial, freesans, clean, sans-serif;
+  }
+
+  header {
+    background-color: #f0f0f0;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  figure {
+    width: 22rem;
+    border: 3px solid #cacaca;
+  }
+
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #cacaca;
+  }
+
+  figure img {
+    border: none;
+  }
+
+  figcaption p:nth-child(2) {
+    display: none;
+  }
+
+  .logoImg {
+    width: 7rem;
+    padding-left: 0rem;
+    padding-top: 0.5rem;
+  }
+
+  ul.navBarList {
+    margin: 0 auto;
+  }
+
+  .navBar li > a:hover {
+    color: #4183c4;
+    cursor: pointer;
+  } */
+
+/* .octocatMainImg {
+      border: none;
+  } 
+}
+*/
+/* media query for between 600px and 1024px */

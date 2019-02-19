@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 
-import gitLogo from '../images/gitHubLogo.png'
-
-class HelloWorld extends Component {
+class Header extends Component {
   render() {
     return (
-      <header className="navHeader">
+      
         <a href="https://octodex.github.com/">
-          <img src={gitLogo} className="logoImg" alt="site-logo" />
+          <img src="images/gitHubLogo.png" className="logoImg" />
         </a>
         <nav className="navBar">
           <ul className="navBarList">
@@ -22,7 +20,7 @@ class HelloWorld extends Component {
             </li>
           </ul>
         </nav>
-      </header>
+
     )
   }
 }
