@@ -1,4 +1,8 @@
 import React, { Component } from 'react'
+import OctocatImage from '../images/octocat1.png'
+import Octocat2Image from '../images/octocat2.jpg'
+import OctocatIcon from '../images/octocatIcon1.jpeg'
+import OctocatIcon2 from '../images/octocatIcon2.jpeg'
 
 class OctocatFigure extends Component {
   render() {

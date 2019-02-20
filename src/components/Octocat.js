@@ -11,43 +11,32 @@ const octocats = [
     url: 'https://octodex.github.com/filmtocats',
     figNum: 146,
     name: 'Filmtocats',
-    image: '../images/octocat1.png',
-    icon: '../images/octocatIcon1.jpeg'
+    image: OctocatImage,
+    icon: OctocatIcon
+  },
+  {
+    id: 2,
+    url: 'https://octodex.github.com/sentrytocat',
+    figNum: 145,
+    name: 'Sentrytocat',
+    image: Octocat2Image,
+    icon: OctocatIcon2
   }
-  // ,
-  // {
-  //   id: 2,
-  //   url: 'https://octodex.github.com/sentrytocat',
-  //   figNum: 145,
-  //   name: 'Sentrytocat',
-  //   image: OctocatImage2,
-  //   icon: OctocatIcon2
-  // }
 ]
-// {octocats.map((octocat) => {
-//    console.log(this.props)
-//  }
-// <Octocat name='filmtocat' number='146'/>
-// in the HTML can now use this.props in the Octocat component ==> this.props.name; this.props.number
-
-// {octocats.map(octocat => {
-//   return (
-//     <Octocat key={Octocat.id} url={Octocat.url} /> // this allows us to use this.props.key/ .url to dynamically pass in data
-//   )
-// })}
 
 class Octocat extends Component {
   render() {
     return (
       <main>
         {octocats.map((octocat) => {
+          console.log(octocat)
           return (
             <OctocatFigure
               name={octocat.name}
               key={octocat.id}
               url={octocat.url}
-              icon={octocat.icon}
               image={octocat.image}
+              icon={octocat.icon}
             />
           )
         })}
